@@ -1,7 +1,11 @@
+
 async function promiseMe(promise) {
-    let binks= "I promise you to" + promise
-    console.log(binks)
+    return new Promise(function(resolve) {
+        let phrase = "I promise you to" + promise;
+        resolve(phrase);
+    });
 }
 
-promiseMe(" fly to the moon").then
-
+promiseMe(" fly to the moon").then(function(result) {
+    console.log(result);
+});
