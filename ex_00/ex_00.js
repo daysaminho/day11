@@ -1,8 +1,10 @@
- async function mafonction() {
+async function asyncFunc() {
+    return new Promise(function(resolve) {
+        const result = "Hello World!";
+        resolve(result);
+    });
+}
 
-    return console.log("Hello World!");
-    
-    
- }
-
- mafonction().then
+asyncFunc().then(function(result) {
+    console.log(result);
+});
