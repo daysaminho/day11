@@ -1,5 +1,5 @@
-async function checkStatus(promesse) {
-    promesse.then(function(result) {
+async function checkStatus(machine) {
+    machine.then(function(result) {
         console.log(result);
         console.log("Checking status over");
     });
